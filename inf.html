@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styleinf.css">
-  <title>お問い合わせ</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleinf.css">
+    <title>お問い合わせ</title>
+  </head>
+  <body>
+  
   <header class="container">
     <h1>お問い合わせ</h1>
   </header>
-
+  
   <div class="nav">
-  <ul>
-    <li><a href="home.html">トップ</a></li>
-    <li><a href="#">ナビ１</a></li>
-    <li><a href="inf.html">お問い合わせ</a></li>
-    <li><a href="mypage.html">自己紹介</a></li>
-  </ul>
-</div>
-
-<form>
-  <div class="name">
-    <label for="name">名前 </label>
-    <input type="text" id="name">
+    <ul>
+      <li><a href="home.html">トップ</a></li>
+      <li><a href="#">ナビ１</a></li>
+      <li><a href="inf.html">お問い合わせ</a></li>
+      <li><a href="mypage.html">自己紹介</a></li>
+    </ul>
   </div>
   
-  <label for="male">性別</label>
-  <div class="gender">
-    <label for="r_male">男性 <input id="r_male" type="radio" name="gender" value="男性"></label>
-    <label for="r_female">女性 <input id="r_female" type="radio" name="gender" value="女性"></label>
+  <div class="wrapper">
+  <form>
+    <div class="name">
+      <label for="name">名前 </label>
+      <input type="text" id="name">
+    </div>
     
-  </div>
-  
-  <div class="content">
-    <div class="content-label">
-      <label for="content" >問合内容</label>
+    <label for="male">性別</label>
+    <div class="gender">
+      <label for="r_male">男性 <input id="r_male" type="radio" name="gender" value="男性"></label>
+      <label for="r_female">女性 <input id="r_female" type="radio" name="gender" value="女性"></label>
+      
     </div>
-    <textarea id="content" name="content">
-    </textarea>
-  </div>
-  
-  <label id="file">添付ファイル</label>
-  <div class="file">
-    <input type="file" name="example" > 
-  </div> 
-  
-  <div class="button">
-    <button type="subit">送信</button>
-  </div>
-</form>
-
-<div class="footer">
-  <p>&copy; 20xx ∞ ALL Rights Reserved.</p>
+    
+    <div class="content">
+      <div class="content-label">
+        <label for="content" >問合内容</label>
+      </div>
+      <textarea id="content" name="content">
+      </textarea>
     </div>
-
+    
+    <label id="file">添付ファイル</label>
+    <div class="file">
+      <input type="file" name="example" > 
+    </div> 
+    
+    <div class="button">
+      <button type="subit">送信</button>
+    </div>
+  </form>
+  
+</div>
+  <div class="footer">
+    <p>&copy; 20xx ∞ ALL Rights Reserved.</p>
+</div>
 </body>
 </html>
