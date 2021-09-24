@@ -57,13 +57,20 @@ input {
 }
 
 .name {
-  margin-left: 5px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
+  margin-top: 70px;
+margin-left: 140px;
+}
+
+.name p {
+  margin-left: -140px;
   margin-top: 100px;
 }
 
-.gender {
-  margin-top: 50px;
+
+
+.gender{
+  margin-top: 40px;
   margin-bottom: 50px;
   vertical-align: top;
   display: inline-block;

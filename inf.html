@@ -24,25 +24,31 @@
   
   <div class="wrapper">
 
-  <form method="get" name="name_form">
+  <form method="get" name="name_form" >
 
-    <div class="name">
-      <label id=",myname">名前 </label>
-      <input type="text" name="name">
-    </div>
     
-    <label for="male" name="gender_check">性別</label>
+   <div class="name">
+     <p>名前</p>
+    <label id=",myname"> </label>
+    <input type="text" name="name">
+  </div>   
+    
+    <label for="male" >性別</label>
     <div class="gender">
-      <label for="r_male">男性 <input id="r_male" type="radio" name="gender" value="男性"></label>
-      <label for="r_female">女性 <input id="r_female" type="radio" name="gender" value="女性"></label>
-      
+
+      <label for="r_male">男性
+        <input  type="radio" name="gender_checkd" value="male">
+        </label>
+      <label for="r_female">女性
+         <input type="radio" name="gender_checkd" value="female">
+      </label>
     </div>
     
     <div class="content">
       <div class="content-label">
         <label for="content" >問合内容</label>
       </div>
-      <textarea id="content" name="content">
+      <textarea id="content" name="message" >
       </textarea>
     </div>
     
@@ -52,7 +58,7 @@
     </div> 
     
     <div class="button">
-      <button type="subit" onclick="return check()">送信</button>
+      <button type="sumbit" onclick="return check()">送信</button>
     </div>
   </form>
   
@@ -62,28 +68,19 @@
 </div>
 <script type="text/javascript">
 
-
 function check( ) {
-  if(name_form.name.value == ""){
+  if(name_form.name.value == "" ){
     alert("名前を入力してください");
-    return false;
-  }else {
-    return true;
   }
 
-  if(gender_check.gender.value == ""){
-    alert("gender");
-    return false;
-  }else {
-    return true;
+  if(name_form.gender_checkd.value == ""){
+    alert("性別を選択してください");
   }
 
+  if(name_form.message.value == ""){
+    alert("問合内容を記入してください");
+  }
 }
-
-
-
-
 </script>
-
 </body>
 </html>
