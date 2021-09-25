@@ -67,27 +67,24 @@
 </div>
 <script type="text/javascript">
 
-// function check( ) {
-//   if(name_form.name.value == "" ){
-//     alert("名前を入力してください");
-//   }
 
-//   if(name_form.gender_checkd.value == ""){
-//     alert("性別を選択してください");
-//   }
-
-//   if(name_form.message.value == ""){
-//     alert("問合内容を記入してください");
-//   }
-// }
 
 function check() {
  
 if(name_form.name.value&&name_form.gender_checkd.value&&name_form.message.value) {
-return true;
-}else {
-return false;
+alert("入力完了")
 }
+if(name_form.name.value == "" ){
+    alert("名前を入力してください");
+  }
+
+  if(name_form.gender_checkd.value == ""){
+    alert("性別を選択してください");
+  }
+
+  if(name_form.message.value == ""){
+    alert("問合内容を記入してください");
+  }
 }
 
 
